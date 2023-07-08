@@ -1,6 +1,5 @@
 <script>
     import logo from '$lib/assets/signature.svg';
-    import bg1 from '$lib/assets/hand-painted-watercolor-pastel-sky-background_23-2148902771.avif'
 </script>
 
 
