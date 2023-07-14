@@ -1,26 +1,23 @@
 <script>
-    import cardFront from '$lib/assets/card-front.jpg';
-    import cardBack from '$lib/assets/card-back.jpg';
-    let flipped = false;
+	import cardFront from '$lib/assets/card-front.jpg';
+	import cardBack from '$lib/assets/card-back.jpg';
+	let flipped = false;
 </script>
 
 <div class="container">
-    <button
-		class="card"
-		class:flipped={flipped}
-		on:click={() => flipped = !flipped}
-	>
-        <div class="front">
-            <img alt="" src={cardFront}/>
-        </div>
-        <div class="back">
-            <img alt="" src={cardBack}/>
-        </div>
-    </button>
+	<button class="card" class:flipped on:click={() => (flipped = !flipped)}>
+		<div class="front">
+			<img alt="" src={cardFront} />
+		</div>
+		<div class="back">
+			<img alt="" src={cardBack} />
+		</div>
+	</button>
 </div>
 
 <style>
-    /* .container {
+	.container {
+		margin: auto;
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
@@ -28,9 +25,10 @@
 		align-items: center;
 		justify-content: center;
 		perspective: 100vh;
-	} */
+	}
 
-    .card {
+	.card {
+		max-width: 100%;
 		position: relative;
 		aspect-ratio: 2.5 / 3.5;
 		/* font-size: min(1vh, 0.25rem); */
@@ -44,11 +42,12 @@
 		user-select: none;
 		cursor: pointer;
 	}
-    .card.flipped {
+	.card.flipped {
 		transform: rotateY(180deg);
 	}
 
-    .front, .back {
+	.front,
+	.back {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -64,7 +63,7 @@
 		padding: 2em;
 	}
 
-    .back {
+	.back {
 		transform: rotateY(180deg);
 	}
 </style>

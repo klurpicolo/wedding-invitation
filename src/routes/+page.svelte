@@ -4,9 +4,14 @@
 </script>
 
 <div>
-	<InviCard />
+	<h1>You're welcome to our wedding</h1>
 </div>
 
 <div>
-	<Gallery></Gallery>
+	<InviCard/>
 </div>
+<!-- 
+<div>
+	<Gallery></Gallery>
+</div> -->
+

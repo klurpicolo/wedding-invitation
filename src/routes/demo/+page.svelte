@@ -1,29 +1,36 @@
 <script>
-	import Gallery from '../GalleryTemplate.svelte';
-	import cardFront from '$lib/assets/card-front.jpg';
-	function HandleClick(e) {
-		console.log(
-			`src: ${e.detail.src}, alt: ${e.detail.alt}, loading: ${e.detail.loading}, class: ${e.detail.class}`
-		);
-	}
+  import { Gallery } from "flowbite-svelte";
+  import image_1 from '$lib/assets/couple/Kodak20001.jpg'
+  import image_2 from '$lib/assets/couple/Kodak20002.jpg'
+  import image_3 from '$lib/assets/couple/Kodak20003.jpg'
+  const images1 = [
+    {alt: 'erbology', src: image_1},
+    {alt: 'shoes', src: image_2},
+    {alt: 'small bag', src: image_3},
+  ]
+   const images2 = [
+    {alt: 'plants', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg'},
+    {alt: 'watch', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg'},
+    {alt: 'shoe', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg'},
+   ]
+   const images3 = [
+    {alt: 'cream', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg'},
+    {alt: 'small bag', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg'},
+    {alt: 'lamp', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg'},
+   ]
+   const images4 = [
+    {alt: 'toiletbag', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg'},
+    {alt: 'playstation', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg'},
+    {alt: 'bag', src: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg'}
+  ]
+
 </script>
 
-<Gallery gap={15} maxColumnWidth={250} on:click={HandleClick} hover={true} loading="lazy">
-	<img src="https://via.placeholder.com/210x170/100" alt="210x170" class="hi" />
-	<img src={cardFront} alt="180x200" />
-	<img src="https://via.placeholder.com/180x200/100" alt="180x200" />
-	<img src="https://via.placeholder.com/200x210/100" alt="200x210" />
-	<img src="https://via.placeholder.com/140x250/100" alt="140x250" />
-	<img src="https://via.placeholder.com/250x300/100" alt="250x300" />
-	<img src="https://via.placeholder.com/280x200/100" alt="280x200" />
-	<img src="https://via.placeholder.com/220x180/100" alt="220x180" />
-	<img src="https://via.placeholder.com/180x150/100" alt="180x150" />
-	<img src="https://via.placeholder.com/210x210/100" alt="210x210" />
-	<img src="https://via.placeholder.com/200x200/100" alt="200x200" />
-	<img src="https://via.placeholder.com/220x200/100" alt="220x200" />
-	<img src="https://via.placeholder.com/180x310/100" alt="180x310" />
-	<img src="https://via.placeholder.com/210x210/100" alt="210x210" />
-	<img src="https://via.placeholder.com/200x280/100" alt="200x280" />
-	<img src="https://via.placeholder.com/210x350/100" alt="210x350" />
-	<img src="https://via.placeholder.com/180x270/100" alt="180x270" />
+<!-- <Gallery class="gap-4 grid-cols-2 md:grid-cols-4"> -->
+
+<Gallery class="gap-4 grid-cols-3 md:grid-cols-4">
+  <Gallery items={images1} />
+  <Gallery items={images1} />
+  <Gallery items={images3} />
+  <Gallery items={images4} />
 </Gallery>
