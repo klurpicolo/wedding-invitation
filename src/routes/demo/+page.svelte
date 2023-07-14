@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import { Gallery } from "flowbite-svelte";
   import image_1 from '$lib/assets/couple/Kodak20001.jpg'
   import image_2 from '$lib/assets/couple/Kodak20002.jpg'
@@ -26,11 +26,9 @@
 
 </script>
 
-<!-- <Gallery class="gap-4 grid-cols-2 md:grid-cols-4"> -->
-
 <Gallery class="gap-4 grid-cols-3 md:grid-cols-4">
   <Gallery items={images1} />
   <Gallery items={images1} />
   <Gallery items={images3} />
   <Gallery items={images4} />
-</Gallery>
+</Gallery> -->
