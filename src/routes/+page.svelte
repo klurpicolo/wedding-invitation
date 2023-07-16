@@ -4,10 +4,6 @@
 </script>
 
 <div>
-	<h1>You're welcome to our wedding</h1>
-</div>
-
-<div>
 	<InviCard/>
 </div>
 <!-- 
