@@ -25,6 +25,21 @@ export default {
 					800: '#CC4522',
 					900: '#A5371B'
 				}
+			},
+			fontFamily: {
+				'montserrat': ['"Montserrat", Sans-serif']
+			},
+			animation: {
+				fadeIn: "fadeIn 2.5s ease-in forwards"
+			},
+			keyframes: {
+				fadeIn: {
+				  "0%": { opacity: 0 },
+				  "100%": { opacity: 1 }
+				}
+			},
+			variants: {
+				animation: ["motion-safe"]
 			}
 		}
 	}
