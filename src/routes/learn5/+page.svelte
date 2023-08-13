@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import AnimatedElement from '$lib/AnimatedElement.svelte';
 </script>
 
@@ -47,4 +47,4 @@
       display: flex;
       justify-content: center;
     }
-  </style>
+  </style> -->
