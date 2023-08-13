@@ -97,7 +97,7 @@
 		line-height: 2em;
 	}
 	.item {
-		width: 45%;
+		width: 30%;
 		display: inline-block;
 		margin-top: 2rem;
 		filter: grayscale(100%);

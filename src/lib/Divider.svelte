@@ -1,0 +1,1 @@
+<div class="block w-52 h-1 bg-slate-600"></div>
