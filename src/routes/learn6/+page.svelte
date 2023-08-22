@@ -19,6 +19,7 @@
 <div class="scroll-container">
 	<!-- <div class="background-img" style="background-image: url({bg})"> -->
 	<div class="background-img">
+
 		<div class="scroll-area flex-col md:flex-row">
 			<div class="left-top">
 				<img class="object-top max-h-screen" src={weddingLogo} alt="" />
@@ -31,6 +32,7 @@
 					<div class="text-6xl">Pattaraporn</div>
 					<div class="text-2xl">and</div>
 					<div class="text-6xl">Warit</div>
+					<a href="https://www.fontspace.com/category/elegant"><img src="https://see.fontimg.com/api/renderfont4/2OZpl/eyJyIjoiZnMiLCJoIjo4OCwidyI6MjAwMCwiZnMiOjQ0LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm9pTiBVUyBXYVJpdCBQYXRUYVJhcG9Sbg/rusilla-serif.png" alt="Elegant fonts"></a>
 				</div>
 			</div>
 		</div>

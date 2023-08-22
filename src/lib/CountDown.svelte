@@ -44,22 +44,22 @@
 
 <div class="">
 	{#if now >= birthday}
-		<p>It's time</p>
+		<p>It's time. Let's go</p>
 	{:else}
-		<div class="flex flex-row justify-around text-center">
-			<div class="h-20 w-20 bg-gray-200">
+		<div class="flex flex-row justify-center text-center">
+			<div class="h-20 w-20 bg-gray-200 mx-2">
 				<div class="mt-3">{remainingDays}</div>
 				<div>Days</div>
 			</div>
-			<div class="h-20 w-20 bg-gray-200">
+			<div class="h-20 w-20 bg-gray-200 mx-2">
 				<div class="mt-3">{remainingHours}</div>
 				<div>Hours</div>
 			</div>
-			<div class="h-20 w-20 bg-gray-200">
+			<div class="h-20 w-20 bg-gray-200 mx-2">
 				<div class="mt-3">{remainingMinutes}</div>
 				<div>Minutes</div>
 			</div>
-			<div class="h-20 w-20 bg-gray-200">
+			<div class="h-20 w-20 bg-gray-200 mx-2">
 				<div class="mt-3">{remainingSeconds}</div>
 				<div>Seconds</div>
 			</div>

@@ -5,12 +5,14 @@
   import couple16 from '$lib/assets/couple/pic16.jpg';
   import couple17 from '$lib/assets/couple/pic17.jpg';
   import couple18 from '$lib/assets/couple/pic18.png';
+  import couple19 from '$lib/assets/couple/pic19.png';
+  import couple20 from '$lib/assets/couple/pic20.png';
 
 </script>
 
 <div class="row">
   <div class="column">
-    <img src={couple15} alt="" />
+    <img src={couple19} alt="" />
     <img src={couple14} alt="" />
   </div>
   <div class="column">
@@ -18,7 +20,7 @@
     <img src={couple18} alt="" />
   </div>
   <div class="column">
-    <img src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+    <img src={couple20} alt="" />
     <img src={couple17} alt="" />
   </div>
   <div class="column">
