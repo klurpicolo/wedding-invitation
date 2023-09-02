@@ -10,7 +10,7 @@
 
 </script>
 
-<div class="row">
+<div class="row justify-center">
   <div class="column">
     <img src={couple19} alt="" />
     <img src={couple14} alt="" />
@@ -61,7 +61,7 @@
 @media screen and (max-width: 700px) {
   .column {
     flex: 100%;
-    max-width: 50%;
+    max-width: 40%;
   }
   .column img {
     filter: grayscale(0) brightness(1);
