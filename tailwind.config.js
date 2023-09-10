@@ -29,7 +29,9 @@ export default {
 			fontFamily: {
 				'montserrat': ['Montserrat', 'Sans-serif'],
 				'satisfy': ['Satisfy', 'cursive'],
-				'dancing-script': ['Dancing Script', 'cursive']
+				'dancing-script': ['Dancing Script', 'cursive'],
+				'sacramento': ['Sacramento', 'cursive'],
+				'calligraphy': ['Stylish Calligraphy']
 			},
 			animation: {
 				fadeIn: "fadeIn 2.5s ease-in forwards",

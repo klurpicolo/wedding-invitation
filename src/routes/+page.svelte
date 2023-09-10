@@ -29,14 +29,15 @@
 			<div class="h-fit md:h-full w-fit left-top z-10 flex justify-center items-center">
 				<img class="object-contain" src={weddingLogo} alt="" />
 			</div>
-			<div class="right-buttom flex flex-col justify-center">
+			<div class="right-buttom flex flex-col justify-center mx-auto">
 				<div
-					class="text-center flex flex-col justify-center items-center font-light motion-safe:animate-fadeIn text-black font-satisfy"
+					class="text-center flex flex-col justify-center items-center motion-safe:animate-fadeIn text-black font-calligraphy"
 				>
-					<div class="text-3xl">Join us to celebate the wedding of</div>
-					<div class="text-5xl">Pattaraporn</div>
-					<div class="text-2xl">and</div>
-					<div class="text-5xl">Warit</div>
+					<div class="text-3xl mt-1">Join us to celebate</div>
+					<div class="text-3xl">the wedding of</div>
+					<div class="text-4xl mt-[10%]">Pattaraporn</div>
+					<div class="text-xl my-1">&</div>
+					<div class="text-4xl">Warit</div>
 				</div>
 			</div>
 		</div>
@@ -103,6 +104,14 @@
 </div>
 
 <style>
+
+	@font-face {
+		font-family: 'Stylish Calligraphy';
+		src: url('/fonts/Stylish Calligraphy Demo.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
 	* {
 		box-sizing: border-box;
 	}
