@@ -1,31 +1,29 @@
 <script>
-  import couple13 from '$lib/assets/couple/pic13.jpg';
-  import couple14 from '$lib/assets/couple/pic14.jpg';
   import couple15 from '$lib/assets/couple/pic15.jpg';
   import couple16 from '$lib/assets/couple/pic16.jpg';
   import couple17 from '$lib/assets/couple/pic17.jpg';
   import couple18 from '$lib/assets/couple/pic18.png';
-  import couple19 from '$lib/assets/couple/pic19.png';
   import couple20 from '$lib/assets/couple/pic20.png';
-
+  import couple21 from '$lib/assets/couple/pic21.jpg';
+  import couple22 from '$lib/assets/couple/pic22.jpg';
+  import couple23 from '$lib/assets/couple/pic23_2.jpg';
 </script>
-
 <div class="row justify-center">
   <div class="column">
-    <img src={couple19} alt="" />
-    <img src={couple14} alt="" />
+    <img src={couple23} alt="" />
+    <img src={couple21} alt="" />
   </div>
   <div class="column">
-    <img src={couple16} alt="" />
+    <img src={couple22} alt="" />
     <img src={couple18} alt="" />
   </div>
   <div class="column">
-    <img src={couple20} alt="" />
-    <img src={couple17} alt="" />
+    <img src={couple15} alt="" />
+    <img src={couple16} alt="" />
   </div>
   <div class="column">
-    <img src={couple13} alt="" />
-    <img src={couple15} alt="" />
+    <img src={couple17} alt="" />
+    <img src={couple20} alt="" />
 
   </div>
 </div>
