@@ -65,7 +65,7 @@
 				class="h-44 w-36 absolute -bottom-6 -right-6 bg-white/70 opacity-90 rounded-tl-full rounded-tr-full rounded-bl-full"
 			/>
 			<div
-				class="h-fit w-fit backdrop-blur-xl bg-[#819171]/70 rounded-tl-full rounded-tr-full rounded-bl-full px-4 pt-12"
+				class="h-fit w-fit backdrop-blur-xl bg-[#bf935c]/70 rounded-tl-full rounded-tr-full rounded-bl-full px-4 pt-12"
 			>
 				<div class="text-white text-2xl first-letter:uppercase first-letter:text-4xl">
 					{klurDao.dao.firstName}
@@ -81,22 +81,22 @@
 	</div>
 
 	<div class="h-fit w-full absolute bottom-8 mx-auto flex justify-evenly">
-		<div
-			class="h-4 md:h-8 w-16 md:w-32 rounded-xl bg-teal-400 transition-all duration-300 ease-in-out delay-300 {showKlur
-				? 'scale-125 opacity-50'
-				: 'scale-100 opacity-100'}"
+        <div
+			class="h-4 md:h-8 w-16 md:w-32 rounded-xl bg-[#819171] transition-all duration-300 ease-in-out delay-300 {showKlur
+				? 'scale-100 opacity-100'
+				: 'scale-125 opacity-75'}"
 			on:click={() => {
-				showKlur = true;
+				showKlur = false;
 				isSelected = true;
 			}}
 			style="cursor:pointer"
 		/>
 		<div
-			class="h-4 md:h-8 w-16 md:w-32 rounded-xl bg-orange-400 transition-all duration-300 ease-in-out delay-300 {showKlur
-				? 'scale-100 opacity-100'
-				: 'scale-125 opacity-50'}"
+			class="h-4 md:h-8 w-16 md:w-32 rounded-xl bg-[#bf935c] transition-all duration-300 ease-in-out delay-300 {showKlur
+				? 'scale-125 opacity-75'
+				: 'scale-100 opacity-100'}"
 			on:click={() => {
-				showKlur = false;
+				showKlur = true;
 				isSelected = true;
 			}}
 			style="cursor:pointer"
