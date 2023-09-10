@@ -50,7 +50,7 @@
 	<!-- <div class="scroll-area bg-gradient-to-br from-teal-500 via-white to-orange-500"> -->
 	<!-- <div class="scroll-area bg-bottom" style="background-image: url(https://i.pinimg.com/564x/37/c7/e1/37c7e10fec069c66add5c755e746a193.jpg)"> -->
 	<div class="scroll-area">
-		<div class="h-full mx-4 md:mx-32 flex justify-center items-center">
+		<div class="h-full mx-4 md:mx-20 flex justify-center items-center">
 			<Gal />
 		</div>
 	</div>
