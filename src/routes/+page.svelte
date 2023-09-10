@@ -1,14 +1,12 @@
 <script>
-	import Gal from '$lib/Gal.svelte';
-
 	import weddingLogo from '$lib/assets/signature2.svg';
-	import couple1 from '$lib/assets/couple/pic15.jpg';
-	import klurBio from '$lib/assets/bio/bio-klur.png';
-	import daoBio from '$lib/assets/bio/bio-dao.png';
-	import bg from '$lib/assets/bg1.jpg';
-	import bg2 from '$lib/assets/bg2.jpg';
-	import bg3 from '$lib/assets/bg3.jpg';
+	import bg from '$lib/assets/bg1_com.png';
 
+	import KlurAndDao from '$lib/KlurAndDao.svelte'
+	import bg4 from '$lib/assets/bg4_com.png';
+	import bg5 from '$lib/assets/bg5_com.jpeg';
+
+	import Gal from '$lib/Gal2.svelte';
 
 	import locationLogo from '$lib/assets/location/location-sign-svgrepo-com.svg';
 	import Map from '$lib/Map.svelte';
@@ -25,6 +23,7 @@
 <div class="support-scrollsnap" />
 
 <div class="scroll-container">
+	
 	<div class="scroll-area flex-col md:flex-row bg-cover bg-bottom" style="background-image: url({bg})">
 		<div class="h-5/6 w-5/6 rounded-t-full md:rounded-t-3xl md:rounded-b-3xl backdrop-saturate-200 bg-white/50 flex flex-col md:flex-row p-2">
 			<div class="h-fit md:h-full w-fit left-top z-10 flex justify-center items-center">
@@ -32,7 +31,7 @@
 			</div>
 			<div class="right-buttom flex flex-col justify-center">
 				<div
-					class="text-center flex flex-col justify-center items-center font-montserrat font-light motion-safe:animate-fadeIn text-black"
+					class="text-center flex flex-col justify-center items-center font-light motion-safe:animate-fadeIn text-black font-satisfy"
 				>
 					<div class="text-3xl">Join us to celebate the wedding of</div>
 					<div class="text-5xl">Pattaraporn</div>
@@ -43,30 +42,12 @@
 		</div>
 	</div>
 	
-	<div class="scroll-area flex-col md:flex-row bg-cover bg-bottom" style="background-image: url({bg3})">
-		<div class="left-top h-3/5 md:h-full">
-			<div class="h-1/2 w-1/2 mr-auto ml-8 mt-8">
-				<div class="relative"> 
-					<img class="" src={daoBio} />
-					<p class="text-xl text-black text-center font-montserrat">Pattaraporn Suwannachak(Dao)</p>
-				</div>
-			</div>
-			<div class="h-1/2 w-1/2 ml-auto mr-8">
-				<div class=""> 
-					<img class="stroke-orange-50 stroke-2" src={klurBio} />
-					<p class="text-xl text-black text-center">Warit Boonmasiri(Klur)</p>
-				</div>
-			</div>
-		</div>
-		<div class="right-buttom h-2/5 m-8 mb-16">
-			<div class="m-auto text-black text-xl text-center">
-				<!-- <img class="h-1/2 w-4/5 m-auto mt-8 mx-auto font-montserrat rounded-xl" src={couple1} /> -->
-				<p>Save the date</p>
-				<p>November 12, 2023</p>
-			</div>
-		</div>
+	<div class="scroll-area bg-white flex flex-row relative">
+		<KlurAndDao img1={bg4} img2={bg5} ></KlurAndDao>
 	</div>
 
+	<!-- <div class="scroll-area bg-gradient-to-br from-teal-500 via-white to-orange-500"> -->
+	<!-- <div class="scroll-area bg-bottom" style="background-image: url(https://i.pinimg.com/564x/37/c7/e1/37c7e10fec069c66add5c755e746a193.jpg)"> -->
 	<div class="scroll-area">
 		<div class="h-full mx-4 md:mx-32 flex justify-center items-center">
 			<Gal />
@@ -78,28 +59,24 @@
 			<p class="my-auto text-black">Timeline</p>
 		</div>
 		<div class="flex flex-row h-5/6 w-full max-w-3xl mb-10">
-			<div class="w-1/2 mb-auto">
-				<div class="w-2/3 ml-auto">
-					<TimeLineItem image={item1} time="07.09" desc="พิธีตักบาตรเช้า"></TimeLineItem>
-					<TimeLineItem image={item2} time="08.09" desc="พิธีแห่ขันหมาก"></TimeLineItem>
-				</div>
+			<div class="w-1/2 mb-auto ml-auto">
+				<TimeLineItem image={item1} time="07.09" desc="พิธีตักบาตรเช้า" additionalClass="ml-auto"></TimeLineItem>
+				<TimeLineItem image={item2} time="08.09" desc="พิธีแห่ขันหมาก" additionalClass="ml-auto"></TimeLineItem>
 			</div>
-			<div class="h-3/4 my-auto flex flex-col items-center">
+			<div class="h-3/4 w-fit my-auto py-4 flex flex-col items-center">
 				<div class="h-4 w-4 rounded-lg bg-slate-600"></div>
 				<div class="w-1 h-full bg-black" />
 				<div class="h-4 w-4 rounded-lg bg-slate-600"></div>
 			</div>
-			<div class="w-1/2 my-auto pt-28">
-				<div class="w-2/3 mr-auto">
-					<TimeLineItem image={item3} time="09.39" desc="พิธีหลั่งน้ำสังข์"></TimeLineItem>
-					<TimeLineItem image={item4} time="11.00" desc="ร่วมรับประทานอาหาร"></TimeLineItem>
-				</div>
+			<div class="w-1/2 my-auto pt-24 mr-auto">
+				<TimeLineItem image={item3} time="09.39" desc="พิธีหลั่งน้ำสังข์" additionalClass="mr-auto"></TimeLineItem>
+				<TimeLineItem image={item4} time="11.00" desc="ร่วมรับประทานอาหาร" additionalClass="mr-auto"></TimeLineItem>
 			</div>
 		</div>
 	</div>
 
-	<div class="scroll-area flex-col md:flex-row py-8">
-		<div class="left-top flex-col h-1/3 md:h-full w-full mx-auto">
+	<div class="scroll-area flex flex-col md:flex-row py-8">
+		<div class="left-top flex-col h-1/2 md:h-full w-full mx-auto">
 			<div class="text-base text-center w-fit text-black flex flex-col mx-auto my-4">
 				<img class="h-12 w-12 mx-auto" src={locationLogo} />
 				<p>ณ 155-Camp หนองกลางนา</p>
@@ -107,12 +84,12 @@
 			</div>
 			<div class="h-3/4 md:h-1/2 w-4/5 mx-auto shadow-xl">
 					<Map />
-					<div class="w-24 bg-slate-400 text-base px-8 py-2 my-8 rounded-lg shadow-lg hover:scale-125 transition-all delay-100">
+					<!-- <div class="w-24 bg-slate-400 text-base px-8 py-2 my-8 rounded-lg shadow-lg hover:scale-125 transition-all delay-100">
 						<a class="h-full w-full m-auto" target="_blank" href="https://www.google.com/maps/place/155-Camp+%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2+155+%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5+%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2+%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87+%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5+70000/@13.6099959,99.7975365,17z/data=!4m6!3m5!1s0x30e3250d8f1e5909:0x54d6a4e0440e274e!8m2!3d13.6099959!4d99.7975365!16s%2Fg%2F11pb8c7ggm">Direction</a>
-					</div>
+					</div> -->
 			</div>
 		</div>
-		<div class="right-buttom text-black text-center m-auto w-screen md:w-3/4">
+		<div class="right-buttom text-black text-center w-screen md:w-3/4">
 			<div class="text-lg w-11/12 md:w-10/12 mx-auto">
 				<h1 class="text-center">Let’s Celebrate In…</h1>
 				<div class="h-0.5 w-full bg-gray-600 my-4" />
