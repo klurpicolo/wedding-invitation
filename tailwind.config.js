@@ -31,7 +31,8 @@ export default {
 				'satisfy': ['Satisfy', 'cursive'],
 				'dancing-script': ['Dancing Script', 'cursive'],
 				'sacramento': ['Sacramento', 'cursive'],
-				'calligraphy': ['Stylish Calligraphy']
+				'calligraphy': ['Stylish Calligraphy'],
+				'kanit': ['Kanit', 'cursive']
 			},
 			animation: {
 				fadeIn: "fadeIn 2.5s ease-in forwards",
