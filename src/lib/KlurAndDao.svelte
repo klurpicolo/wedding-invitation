@@ -81,7 +81,7 @@
 	</div>
 
 	<div class="h-fit w-full absolute bottom-8 mx-auto flex justify-evenly">
-        <div
+		<div
 			class="h-4 md:h-8 w-16 md:w-32 rounded-xl bg-[#819171] transition-all duration-300 ease-in-out delay-300 {showKlur
 				? 'scale-100 opacity-100'
 				: 'scale-125 opacity-75'}"
