@@ -33,11 +33,11 @@
 				<div
 					class="text-center flex flex-col justify-center items-center motion-safe:animate-fadeIn text-black font-calligraphy"
 				>
-					<div class="text-3xl mt-1">Join us to celebate</div>
-					<div class="text-3xl">the wedding of</div>
-					<div class="text-4xl mt-[10%]">Pattaraporn</div>
+					<div class="text-3xl md:text-4xl mt-1">Join us to celebate</div>
+					<div class="text-3xl md:text-4xl">the wedding of</div>
+					<div class="text-4xl md:text-5xl mt-[10%]">Pattaraporn</div>
 					<div class="text-xl my-1">&</div>
-					<div class="text-4xl">Warit</div>
+					<div class="text-4xl md:text-5xl">Warit</div>
 				</div>
 			</div>
 		</div>
@@ -47,8 +47,6 @@
 		<KlurAndDao img1={bg4} img2={bg5} ></KlurAndDao>
 	</div>
 
-	<!-- <div class="scroll-area bg-gradient-to-br from-teal-500 via-white to-orange-500"> -->
-	<!-- <div class="scroll-area bg-bottom" style="background-image: url(https://i.pinimg.com/564x/37/c7/e1/37c7e10fec069c66add5c755e746a193.jpg)"> -->
 	<div class="scroll-area">
 		<div class="h-full mx-4 md:mx-20 flex justify-center items-center">
 			<Gal />
@@ -57,21 +55,32 @@
 
 	<div class="scroll-area flex-col pt-8">
 		<div class="h-1/6 w-fulltext-center">
-			<p class="my-auto text-black">Timeline</p>
+			<p class="my-auto text-black font-kanit">Timeline</p>
 		</div>
 		<div class="flex flex-row h-5/6 w-full max-w-3xl mb-10">
 			<div class="w-1/2 mb-auto ml-auto">
-				<TimeLineItem image={item1} time="07.09" desc="พิธีตักบาตรเช้า" additionalClass="ml-auto"></TimeLineItem>
-				<TimeLineItem image={item2} time="08.09" desc="พิธีแห่ขันหมาก" additionalClass="ml-auto"></TimeLineItem>
+				<div class="flex relative mb-4">
+					<TimeLineItem image={item1} time="07.09" desc="พิธีตักบาตรเช้า" additionalClass="mx-auto"></TimeLineItem>
+					<div class="h-4 w-4 absolute -right-[10px] top-1/2 rounded-full bg-slate-600"></div>
+				</div>
+				<div class="flex relative">
+					<TimeLineItem image={item3} time="09.39" desc="พิธีหลั่งน้ำสังข์" additionalClass="mx-auto"></TimeLineItem>
+					<div class="h-4 w-4 absolute -right-[10px] top-1/2 rounded-full bg-slate-600"></div>
+				</div>
 			</div>
-			<div class="h-3/4 w-fit my-auto py-4 flex flex-col items-center">
-				<div class="h-4 w-4 rounded-lg bg-slate-600"></div>
+			<div class="h-5/6 w-fit my-auto py-4 flex flex-col items-center">
 				<div class="w-1 h-full bg-black" />
-				<div class="h-4 w-4 rounded-lg bg-slate-600"></div>
+				
 			</div>
 			<div class="w-1/2 my-auto pt-24 mr-auto">
-				<TimeLineItem image={item3} time="09.39" desc="พิธีหลั่งน้ำสังข์" additionalClass="mr-auto"></TimeLineItem>
-				<TimeLineItem image={item4} time="11.00" desc="ร่วมรับประทานอาหาร" additionalClass="mr-auto"></TimeLineItem>
+				<div class="relative">
+					<TimeLineItem image={item2} time="08.09" desc="พิธีแห่ขันหมาก" additionalClass="mx-auto"></TimeLineItem>
+					<div class="h-4 w-4 absolute -left-[10px] top-1/2 rounded-full bg-slate-600"></div>
+				</div>
+				<div class="relative">
+					<TimeLineItem image={item4} time="11.00" desc="ร่วมรับประทานอาหาร" additionalClass="mx-auto"></TimeLineItem>
+					<div class="h-4 w-4 absolute -left-[10px] top-1/2 rounded-full bg-slate-600"></div>
+				</div>
 			</div>
 		</div>
 	</div>
