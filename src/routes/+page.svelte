@@ -52,11 +52,15 @@
 		</div>
 	</div>
 
-	<div class="scroll-area flex-col pt-8">
-		<div class="h-1/6 w-fulltext-center">
-			<p class="my-auto text-black font-kanit">Timeline</p>
+	<div class="scroll-area flex-col p-4">
+		<div class="h-full w-full max-w-md p-4 bg-[#819171]/50 rounded-t-full text-white">
+			<div class="h-1/6 p-4 text-center ">
+				<p class="font-kanit">Timeline</p>
+			</div>
+			<div class="h-5/6 w-full">
+				<TimeLine></TimeLine>
+			</div>
 		</div>
-		<TimeLine></TimeLine>
 	</div>
 
 	<div class="scroll-area flex flex-col md:flex-row py-8">
@@ -66,7 +70,7 @@
 				<p>ณ 155-Camp หนองกลางนา</p>
 				<p>อำเภอเมือง จังหวัดราชบุรี</p>
 			</div> -->
-			<img class="h-8 w-8 mx-auto" src={locationLogo} />
+			<!-- <img class="h-8 w-8 mx-auto" src={locationLogo} /> -->
 			<div class="h-3/4 md:h-1/2 w-4/5 mx-auto shadow-xl">
 				<Map />
 				<div class="text-base text-center w-fit text-black flex flex-col mx-auto my-4">

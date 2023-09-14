@@ -6,9 +6,9 @@
 </script>
 
 <div
-	class="h-fit w-fit text-lg text-black font-kanit flex flex-col justify-center items-center p-4 {additionalClass}"
+	class="h-full w-full text-lg font-kanit flex flex-col justify-center items-center p-4 {additionalClass}"
 >
-	<img class="object-scale-down" src={image} />
+	<img class="object-cover" src={image} />
 	<p>{time} น.</p>
 	<p class="text-base text-center">{desc}</p>
 </div>
