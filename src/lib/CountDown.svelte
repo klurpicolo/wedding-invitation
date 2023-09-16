@@ -46,21 +46,21 @@
 	{#if now >= birthday}
 		<p>It's time. Let's go</p>
 	{:else}
-		<div class="flex flex-row justify-center text-center">
-			<div class="h-20 w-20 bg-gray-200 mx-2">
-				<div class="mt-3">{remainingDays}</div>
+		<div class="flex flex-row justify-center text-center text-white">
+			<div class="h-20 w-20 bg-[#819171] mx-2">
+				<div class="mt-3 text-2xl">{remainingDays}</div>
 				<div>Days</div>
 			</div>
-			<div class="h-20 w-20 bg-gray-200 mx-2">
-				<div class="mt-3">{remainingHours}</div>
+			<div class="h-20 w-20 bg-[#819171] mx-2">
+				<div class="mt-3 text-2xl">{remainingHours}</div>
 				<div>Hours</div>
 			</div>
-			<div class="h-20 w-20 bg-gray-200 mx-2">
-				<div class="mt-3">{remainingMinutes}</div>
+			<div class="h-20 w-20 bg-[#819171] mx-2">
+				<div class="mt-3 text-2xl">{remainingMinutes}</div>
 				<div>Minutes</div>
 			</div>
-			<div class="h-20 w-20 bg-gray-200 mx-2">
-				<div class="mt-3">{remainingSeconds}</div>
+			<div class="h-20 w-20 bg-[#819171] mx-2">
+				<div class="mt-3 text-2xl">{remainingSeconds}</div>
 				<div>Seconds</div>
 			</div>
 		</div>
