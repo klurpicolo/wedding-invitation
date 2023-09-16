@@ -2,14 +2,13 @@
 	import { onMount, onDestroy } from 'svelte';
 	let timerId: number;
 
-	// Please replace with the actual birthday.
 	let birthday: Date = new Date('2023-11-12');
 	let now: Date = new Date();
 
-	let remainingDays: number;
-	let remainingHours: number;
-	let remainingMinutes: number;
-	let remainingSeconds: number;
+	let remainingDays: number = 0;
+	let remainingHours: number = 0;
+	let remainingMinutes: number = 0;
+	let remainingSeconds: number = 0;
 
 	const calculateCountdown = (): void => {
 		now = new Date();
@@ -40,11 +39,22 @@
 	onDestroy((): void => {
 		clearInterval(timerId); // Clean up the interval when the component is destroyed
 	});
+
+	$: isReach = now >= birthday;
+	let hue = 0;
+	setInterval(() => {
+		hue++;
+	}, 10);
 </script>
 
 <div class="">
-	{#if now >= birthday}
-		<p>It's time. Let's go</p>
+	{#if isReach}
+		<div
+			class="m-4 p-4 text-xl transition-all animate-bounce rounded-full"
+			style="color:white;background-color:hsl({hue}, 80%, 30%)"
+		>
+			It's time. Let's Go
+		</div>
 	{:else}
 		<div class="flex flex-row justify-center text-center text-white">
 			<div class="h-20 w-20 bg-[#819171] mx-2">
