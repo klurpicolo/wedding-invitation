@@ -67,22 +67,19 @@
 			<div class="h-full w-4/5 m-auto text-black flex flex-col">
 				<div class="text-center text-3xl md:text-4xl">Location</div>
 				<div class="text-base h-16 w-fit text-center flex flex-col mx-auto">
-					<div class="flex">
+					<div class="flex relative">
 						<div
 							class="h-12 w-24 bg-[#819171] rounded-xl m-auto p-2 hover:scale-110 transition-all delay-75 ease-in-out relative text-white"
 						>
+							<div class="h-full w-full absolute animation-small-ping opacity-75 inline-flex bg-[#819171] rounded-xl top-0 left-0">
+
+							</div>
 							<a
-								class="h-full w-full m-auto"
+								class="h-full w-full m-auto relative flex justify-center"
 								target="_blank"
 								href="https://www.google.com/maps/place/155-Camp+%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2+155+%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5+%E0%B8%AB%E0%B8%99%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B2+%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87+%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5+70000/@13.6099959,99.7975365,17z/data=!4m6!3m5!1s0x30e3250d8f1e5909:0x54d6a4e0440e274e!8m2!3d13.6099959!4d99.7975365!16s%2Fg%2F11pb8c7ggm"
 								>Direction</a
 							>
-							<span class="absolute flex h-3 w-3 -top-1 left-0">
-								<span
-									class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#819171]/50 opacity-75"
-								/>
-								<span class="relative inline-flex rounded-full h-3 w-3 bg-[#819171]/80" />
-							</span>
 						</div>
 						<div
 							class="h-12 m-2 pl-2 lg:px-8 text-base md:text-lg flex flex-col justify-center items-start"
@@ -110,8 +107,8 @@
 			</div>
 
 			<div class="h-fit px-6 text-xl flex-1 flex flex-col justify-center">
-				<div class="">Please don't ware high heel</div>
-				<div class="">Thank you for being an important part of our story</div>
+				<div class="p-4">Attention please! For our garden wedding, it's best to skip the heels(stilettos)</div>
+				<div class="p-4">Thank you for being an important part of our story</div>
 			</div>
 		</div>
 	</div>
@@ -134,6 +131,17 @@
 		height: 100dvh;
 		font-size: 60px;
 		/* w-full max-w-xl */
+	}
+
+	@keyframes ping-small {
+		75%, 100% {
+			transform: scale(1.2);
+			opacity: 0;
+		}
+	}
+
+	.animation-small-ping {
+		animation: ping-small 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 	}
 
 	/* refactor to md:??? instead */
